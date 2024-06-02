@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string program_name = "Evan's Tax Calculator";
+    cout << "Thanks for using " << program_name << endl << endl;
+
+    double annual_income;
+    double state_tax;
+    double county_tax;
+
+    cout << "What is your Annual Income?";
+    cin >> annual_income;
+    cout << endl;
+
+    cout << "In a percentage, What is the State Tax Rate in your area? (ex: If it is 4%, type .04): ";
+    cin >> state_tax;
+    cout << "Your total to pay for State Tax is: $" << annual_income * state_tax << endl << endl;
+
+    cout << "In a percentage, What is the County Tax Rate in your area? (ex: If it is 4%, type .04): ";
+    cin >> county_tax;
+    cout << "Your total to pay for County Tax is: $" << annual_income * county_tax << endl << endl;
+
+    cout << "Thanks for using " << program_name << "!" << endl << endl;
+
+    cout << "Do you wish to close " << program_name << "?: ";
+    string calculation_finished;
+    cin >> calculation_finished;
+
+    return 0;
+}
